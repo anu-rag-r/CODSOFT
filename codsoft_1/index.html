@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Anurag Kumar R</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section-picture">
+            <img src="./assets/profile1.jpg" alt="Anurag" class="profile-image">
+        </div>
+
+        <div class="section-text">
+            <p>Hello, I am</p>
+            <h1>Anurag Kumar R</h1>
+
+            <div class="btn-container">
+                <button class="resume-btn btn" onclick="window.open('./assets/resume.pdf')">View Resume</button>
+                <button class="contact-btn btn" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+
+            <div id="social-info">
+                <i class="fa-brands fa-linkedin icon" onclick="location.href='https://www.linkedin.com/in/anurag-kumar-r-515b39314/'"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-text">
+            <p>Get to Know More</p>
+            <h1>About Me</h1>
+
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <span class="material-symbols-outlined">
+                            school
+                            </span>
+                        <h3>Education</h3>
+                        <p>BTech: Computer Science and Engineering <br>Presidency University <br> CGPA: 8.51</p>
+                    </div>
+
+                    <div class="details-summary-container">
+                        <h3>Summary</h3>
+                        <p>Hardworking Student offering part-time work experience and extensive knowledge of core subject
+                            matter. Meticulous and detail-oriented with excellent observational, organizational and communication
+                            skills. Skilled multitasker with superior work ethic and good teamwork, problem-solving and
+                            organizational skills. Willing to take on any task to help team. Reliable and dedicated team player with
+                            hardworking and resourceful approach. Resourceful team player with experience with common
+                            software applications and social media platforms.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-text">
+            <p>View My</p>
+            <h1>Skills</h1>
+        
+
+        <div class="skills-details-containers">
+            <div class="skills-containers">
+                <div class="skills-container">
+                    <i class="fa-brands fa-python"></i>
+                    <h2 class="skill-name">Python</h2>
+                </div>
+                <div class="skills-container">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2 class="skill-name">Html</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2 class="skill-name">Css</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-js"></i>
+                    <h2 class="skill-name">Javascript</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-java"></i>
+                    <h2 class="skill-name">Java</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-react"></i>
+                    <h2 class="skill-name">React Framework</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-node"></i>
+                    <h2 class="skill-name">Node Js</h2>
+                </div>
+
+                <div class="skills-container">
+                    <i class="fa-brands fa-flutter"></i>
+                    <h2 class="skill-name">Flutter (Basics)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-text">
+            <p>Check My</p>
+            <h1>Projects</h1>
+    
+            <div class="projects-details-container">
+                <div class="project-details">
+                    <h3>Mobile Charging on Coin Insertion</h3>
+                    <img src="./assets/mobile-charging.jpg" alt="Mobile Charging Project">
+                    <p>This <strong>solar-powered mobile charging system</strong> uses an Arduino UNO and a <strong>coin insertion mechanism</strong> to charge devices. It won 2nd place out of 500 projects in college and a Silver Award at the E-NNOVATE International Innovation Show. The project combines <strong>solar energy</strong> with <strong>microcontroller technology</strong> to offer a sustainable charging solution.</p>
+                </div>
+                <div class="project-details">
+                    <h3>Electric Skateboard with Raspberry Pi</h3>
+                    <img src="./assets/skateboard.jpg" alt="Electric Skateboard Project">
+                    <p>This <strong>electric skateboard</strong> was built using a Raspberry Pi, integrating motor control and <strong>remote control functionality</strong>. The Raspberry Pi manages speed and direction, showcasing my skills in combining <strong>hardware and software</strong> to create an innovative ride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certification">
+        <div class="section-text">
+            <p>What I have learnt..</p>
+            <h1>Certificates</h1>
+            <div class="certificates-details-container">
+                <div class="certificates-container">
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Introduction to Supervised & Unsupervised Machine Learning</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn" onclick="window.open('./assets/certificates/AIML.pdf')">Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Programming with JAVA 8 (Advanced version of Java 8 with new features)</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/Java8Certification.pdf')">Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Getting Started with Machine Learning Algorithms</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/machine learning.pdf')">Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Introduction to MERN Stack</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/MERN certificate.pdf')">Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Power BI for Beginners</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/Power Bi Certificate.pdf')">Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">The Complete 2024 Web Development Bootcamp, UDEMY</h2>
+                        <p class="pending-text">Pending...</p>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">100 Days of Code: The Complete Python Pro Bootcamp, UDEMY</h2>
+                        <p class="pending-text">Pending...</p>
+                    </div>
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">The complete flutter development with dart, UDEMY</h2>
+                        <p class="pending-text">Pending...</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="awards">
+        <div class="section-text">
+            <p>What I have earned..</p>
+            <h1>Awards</h1>
+    
+            <div class="certificates-details-container">
+                <div class="certificates-container">
+    
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">2nd Place for the Project titled - Solar Based Mobile Charging using Coin Insertion</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/Arduino.jpg')">Certificate</button>
+                        </div>
+                    </div>
+    
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Certificate for Silver Award for the innovation Solar based mobile charging using coin insertion</h2>
+                        <div class="btn-container">
+                            <button class="certificate-btn"
+                            onclick="window.open('assets/certificates/ PU_128.pdf')">Certificate</button>
+                        </div>
+                    </div>
+    
+                    <div class="certificate-item">
+                        <h2 class="certificate-name">Hackathon: IEEE CODA-THON on web application (3rd PLACE)</h2>
+                        <div class="btn-container">
+                            <p class="pending-text">Certificate to be issued...</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-text">
+            <p>Get in Touch..</p>
+            <h1>Contact Me</h1>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>anuragkumarak99861@gmail.com</p>
+                    </div>
+    
+                    <div class="contact-info">
+                        <i class="fa-brands fa-linkedin icon" ></i>
+                        <p><a href="https://www.linkedin.com/in/anurag-kumar-r-515b39314/">LinkedIn</a></p>
+                    </div>
+    
+                    <div class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>7760018020</p>
+                    </div>
+                </div>
+    
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anurag Kumar R. All rights reserved.</p>
+        <p>Website built with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(45deg, rgb(180, 180, 250), rgb(88, 145, 243));
+    /* height: 100vh; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(4, 45, 81);
+}
+
+a, .btn{
+    transition: all 300ms ease;
+}
+
+nav, .nav-link{
+    display: flex;
+}
+
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-link{
+    list-style: none;
+    gap: 2.5rem;
+    font-size: 1.25rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+.logo{
+    font-size: 3rem;
+    cursor: default;
+}
+
+.profile-image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 20rem; /* Adjust size as needed */
+    height: 20rem; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border: solid black 0.1rem;
+}
+
+.section-container, #profile{
+    display: flex;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 70vh;
+}
+
+.section-picture{
+    display: flex;
+    margin: auto 0;
+}
+
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-text h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#social-info{
+    height: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: solid black 0.1rem;
+    cursor: pointer;
+}
+
+.resume-btn {
+    background: black;
+    color: white;
+}
+
+.contact-btn {
+    background: white;
+    color: black;
+}
+
+.resume-btn:hover {
+    background: white;
+    color: black;
+}
+
+.contact-btn:hover {
+    background: black;
+    color: white;
+}
+.section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.about-details-container {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.about-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-container {
+    margin-bottom: 20px;
+}
+
+.details-container h3,
+.details-summary-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.details-container p,
+.details-summary-container p {
+    font-size: 0.9em; /* Reduce font size a little */
+    line-height: 1.5;
+}
+
+.details-container p {
+    font-weight: normal;
+}
+
+.details-container p strong {
+    font-weight: bold;
+}
+
+.details-summary-container {
+    margin-top: 20px;
+}
+
+.material-symbols-outlined {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Center the content with margins */
+.section-text p, .section-text h1 {
+    text-align: center;
+}
+
+.section-text>p{
+    font-size: 1rem;
+}
+
+/* Highlighting specific words in the experience */
+.details-container p strong {
+    font-weight: bold;
+    color: #000; /* Optional: Change color for emphasis */
+}
+
+
+
+/* Styling the skills section */
+.skills-details-containers {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    /* padding: 20px; */
+}
+
+.skills-containers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap: 20px; /* Space between the skill containers */
+    padding: 20px;
+    /* justify-items: center; */
+}
+
+.skills-container {
+    flex-wrap: wrap-reverse;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    flex: 1 1 calc(25% - 40px); /* Adjust width of each box */
+    box-sizing: border-box;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skills-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.skill-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Adjust icon size */
+.skills-container i {
+    font-size: 2em;
+    color: #000; /* Optional: Change icon color */
+}
+
+/* General styling for the section */
+#projects {
+    padding: 0 0;
+}
+
+.section-text {
+    text-align: center;
+}
+
+.section-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling each project details box */
+.projects-details-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allow wrapping of project details boxes */
+}
+
+.project-details {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Increased width */
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 0.1rem solid black;
+}
+
+.project-details:hover {
+    transform: translateY(-10px);
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.project-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 0.1rem solid black;
+}
+
+.project-details p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Highlight important text */
+.project-details p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Styling the certificates section */
+.certificates-details-container {
+    display: flex;
+    justify-content: center; /* Center the certificates container horizontally */
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-gap: 20px; /* Space between the certificate items */
+    padding: 20px;
+    max-width: 1200px; /* Limit the maximum width of the container */
+    width: 100%;
+}
+
+.certificate-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced between top and bottom */
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    height: 100%; /* Make sure the item fills the available space */
+}
+
+.certificate-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.certificate-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pending-text {
+    font-size: 1em;
+    color: gray;
+    font-style: italic;
+}
+
+.certificate-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.certificate-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.section-text {
+    text-align: center;
+    margin-bottom: 40px; /* Space below the section title */
+}
+
+.section-text h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+#contact {
+    padding: 60px 20px; /* Add some padding around the contact section */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center the contact info horizontally */
+    margin-bottom: 20px;
+    gap: 1rem; /* Space between each contact info item */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center; /* Center items vertically within the container */
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px 20px;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 500px; /* Limit the width of each contact item */
+    width: 100%;
+    gap: 1rem;
+}
+
+.contact-info:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.contact-info i {
+    font-size: 1.5em;
+    color: #333;
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: black; /* Change color on hover */
+}
+
+footer {
+    text-align: center; /* Center-align the text */
+    padding: 1rem 0; /* Add some padding to the top and bottom */
+}
+
+
